@@ -1,0 +1,12 @@
+use web_page;
+
+create table User (id int auto_increment, username varchar(100), password varchar(100), name varchar(100), avatar varchar(100), email varchar(100), birthday varchar(100), gender varchar(10), role varchar(10), primary key (id));
+
+create table Movie (id int auto_increment, name varchar(100), duration varchar(50), release_date varchar(100), plot varchar(200), poster varchar(100), genre varchar(100), director varchar(100), writer varchar(100), actors varchar(200), primary key (id));
+
+create table MovieShow (id int auto_increment, place varchar(100), show_date varchar(100), time varchar(100), price varchar(100), seats varchar(50), movieId int, primary key(id), foreign key (movieId) references Movie(id));
+
+create table Ticket (id int auto_increment, number_of_seats varchar(50), ticket_date varchar(100), total_price varchar(100), showId int, userId int, primary key(id), foreign key (showId) references MovieShow(id), foreign key (userId) references User(id));
+
+create table Genre (id int auto_increment, name varchar(50), primary key(id));
+

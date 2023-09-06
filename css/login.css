@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .background {
+    background: url("https://media.istockphoto.com/photos/pop-corn-and-on-red-armchair-cinema-picture-id1271522601?b=1&k=20&m=1271522601&s=170667a&w=0&h=azZRRchShbrwRgq58omc1HOYABnfDDOzXJatuaZrueQ=")
+      rgba(0, 0, 0, 0.61);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(5px);
+    min-height: 1000px;
+  
+  }
+
+  .content {
+      text-align: center;
+      padding-top: 40px;
+  }
+  
+  .container {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin: 60px;
+    background: transparent;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 25px;
+  }
+
+  .container-mess {
+    text-align: center;
+    margin: 50px 520px 10px 520px;
+    padding: 10px;
+    background: transparent;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 25px;
+    color: #1daf25;
+	font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  
+  form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .form-item {
+    display: flex;
+    width: 90%;
+    background: transparent;
+    margin: 10px auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(82, 81, 81);
+  }
+  
+  .radio_div {
+    display: flex;
+    gap: 8px;
+    margin: 0px 15px 0px 15px;
+  }
+  input[type=radio] {
+    border: 0px;
+    width: 20px; 
+    height: 20px;
+    }
+
+    input[type=checkbox] {
+        border: 0px;
+        width: 20px; 
+        height: 20px;
+    }
+
+  .form-item:hover {
+    border: 1px solid rgb(82, 81, 81);
+  }
+  input {
+    background: transparent;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+  }
+  
+  span {
+    user-select: none;
+    margin: 5px;
+    color: rgb(172, 172, 172);
+    background: rgba(85, 81, 81, 0.637);
+    padding: 5px;
+    border-radius: 18px;
+  }
+  input[type="submit"] {
+    width: 180px;
+    font-size: 20px;
+    margin: 10px auto;
+    
+    background: rgba(122, 123, 116, 0.72);
+    border: none;
+    color: white;
+  }
+  input[type="submit"]:hover {
+    background: rgba(222, 236, 34, 0.678);
+  }
+  p:first-of-type {
+    margin: 0;
+  }
+  
+  .input-button {
+    font-size: 18px;
+    padding: 5px 16px;
+    margin: 5px 15px;
+    width: 180px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.7s ease;
+  }
+
+  .obavezno-polje::after { 
+    content: " *";
+	color: red;
+  }
+  .error {
+	color: #FF0000;
+	font-size: 0.7em;
+}
+  
+  p {
+    font-size: 18px;
+    margin: 5px;
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    color: grey;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .container {
+      width: 90%;
+    }
+  }
